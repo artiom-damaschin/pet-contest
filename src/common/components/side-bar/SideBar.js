@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Layout, Menu } from 'antd'
-import { routes } from '../../../constants/routes'
+import { routes } from '../../constants/routes'
 
 const { Sider } = Layout
 
@@ -15,11 +15,11 @@ function SideBar() {
       }}
     >
       <div className="logo" />
-      <Menu theme="dark" mode="inline" defaultSelectedKeys={['2']}>
-        {routes.map(route => {
+      <Menu theme="dark" mode="inline" defaultSelectedKeys={['/']}>
+        {routes.map(({ path, title }) => {
           return (
-            <Menu.Item key={route.path}>
-              <Link to={route.path}>{route.title}</Link>
+            <Menu.Item key={path}>
+              <Link to={path}>{title}</Link>
             </Menu.Item>
           )
         })}
