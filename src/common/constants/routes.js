@@ -1,16 +1,16 @@
-import Home from '../../pages/home'
-import Gallery from '../../pages/gallery'
+import { HomePage } from '../../pages'
+import { GalleryPage } from '../../pages'
 
 export const routes = [
   {
     title: 'Home',
     path: '/',
     exact: true,
-    component: Home,
+    component: HomePage,
   },
   {
     title: 'Gallery',
     path: '/gallery',
-    component: Gallery,
+    component: GalleryPage,
   },
 ]
