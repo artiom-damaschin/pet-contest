@@ -1,8 +1,16 @@
-import { SET_FLAG } from '../types'
+import { SET_IMG, FETCH_DOGGO, HOME_INIT } from '../types'
 
-export const setFlag = flag => ({
-  type: SET_FLAG,
+export const setImg = data => ({
+  type: SET_IMG,
   payload: {
-    flag,
+    data,
   },
+})
+
+export const homeInit = () => ({
+  type: HOME_INIT,
+})
+
+export const fetchDoggo = () => ({
+  type: FETCH_DOGGO,
 })

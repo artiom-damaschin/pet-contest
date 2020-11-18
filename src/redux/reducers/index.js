@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import tempreducer from './temp-reducer'
+import doggoReducer from './doggo-reducer'
 
 const rootReducers = combineReducers({
-  temp: tempreducer,
+  doggo: doggoReducer,
 })
 
 export default rootReducers
